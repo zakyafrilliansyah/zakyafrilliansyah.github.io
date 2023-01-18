@@ -1,0 +1,102 @@
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<body>
+<center>
+<div class="w3-container w3-card-4 w3-black">
+<img src="benner.png" width="1200px" height="200px">
+
+</div>
+
+<div class="w3-bar w3-purple">
+	<button class="w3-bar-item w3-button" onclick="openKota('r34')">R34</button>
+	<button class="w3-bar-item w3-button" onclick="openKota('mk4')">MK4</button>
+	<button class="w3-bar-item w3-button" onclick="openKota('rx7')">RX7</button>
+	<button class="w3-bar-item w3-button" onclick="openKota('nsx')">NSX</button>
+	<button class="w3-bar-item w3-button" onclick="openKota('evo9')">EVO9</button>
+	<div class="w3-dropdown-hover">
+		<button class="w3-button">LAINYA</button>
+	<div class="w3-dropdown-content w3-bar-blook w3-card-4">
+		<button class="w3-bar-item w3-button" onclick="openKota('s15')">SILVIA S15</button>
+		<button class="w3-bar-item w3-button" onclick="openKota('86')">86</button>
+	</div>
+</div>
+	<button class="w3-bar-item w3-button" onclick="openKota('me')">ABOUT</button>
+</div>
+</div>
+
+<body bgcolor="black">
+<font color="white">
+<div id="r34" class="w3-container kota w3-animate-fading" style="display:none">
+ <center>
+
+ <h2>Nissan Skyline GT-R R34</h2>
+ <p>Nissan Skyline GT-R R34 merupakan salah satu mobil ganas milik Nissan yang dijuluki 
+ dengan nama “Godzilla”. Mobil ini memiliki tampilan yang ikonik dengan model “coupe”-nya.
+ Sayangnya Nissan memberhentikan produksi mobil ini pada tahun 2002/2003 </p>
+ <img src="r34.jpg" width="50%"> 
+</div>
+
+<div id="mk4" class="w3-container kota  w3-animate-bottom" style="display:none">
+ <h2>Toyota Supra MK4</h2>
+ <p>Mobil Supra MK4 bisa disebut sebagai salah satu mobil Toyota paling ikonik yang pernah mereka buat. 
+ Tampilannya yang ikonik dan mesinnya yang ganas membuat mobil ini tampil dengan gagah di franchise film Fast and Furious.</p>
+ <img src="mk4.jpg" width="50%">
+</div>
+
+<div id="rx7" class="w3-container kota w3-animate-top" style="display:none">
+ <h2>Mazda RX7</h2>
+ <p>Mazda RX-7 adalah mobil sport yang diproduksi oleh Mazda tahun 1978 sampai 2002. RX-7 pada awalnya menggunakan mesin
+ wankel rotari berkapasitas silinder 1.146 cc (69,9 cu in) dengan penggerak roda belakang.</p>
+ <img src="rx7.jpg" width="50%">
+</div>
+
+<div id="nsx" class="w3-container kota w3-animate-zoom" style="display:none">
+ <h2>Honda NSX</h2>
+ <p>Honda NSX, dipasarkan di Amerika Utara sebagai Acura NSX, adalah mobil sport dua-kursi, mesin tengah dirakit oleh 
+ Honda/Acura. Asal-usul jejak NSX kembali ke 1984, dengan konsep HP-X (Honda Pininfarina eXperimental), 
+ merupakan mobil sport bermesin 3.0 L V6 mesin tengah berpenggerak roda belakang .</p>
+ <img src="nsx.jpg" width="50%">
+</div>
+
+<div id="evo9" class="w3-container kota w3-animate-right" style="display:none">
+ <h2>Misubitshi Lancer Evo 9 </h2>
+ <p>Mitsubithshi Lancer Evo 9 diluncurkan pada 3 Maret 2005 di ajang Geneva Motor Show saat di Jepang. Generasi kesembilannya dibekali
+ dengan mesin 2.0 liter dengan kode 4G63 menggunakan teknologi variable valve timing.</p>
+ <img src="evo9.jpeg" width="50%">
+</div>
+
+<div id="s15" class="w3-container kota w3-animate-left" style="display:none">
+ <h2>Nissan Silvia S15 </h2>
+ <p>Nissan Silvia S15 merupakan mobil produksi dari Nissan Motors di Jepang. Mobil sport dua pintu dengan penggerak roda 
+ belakang dari Nissan diproduksi tahun 1965 sampai 2002.</p>
+ <img src="s15.jpg" width="50%">
+</div>
+
+<div id="86" class="w3-container kota w3-animate-left" style="display:none">
+ <h2>Toyota 86 </h2>
+ <p>Toyota 86 adalah mobil sport Coupe berukuran kompak hasil kolaborasi antara Toyota dan Subaru. Mobil ini disebut Toyota GT-86 di Eropa,
+ atau Scion FR-S di Amerika Serikat, serta dijual oleh Subaru sebagai Subaru BRZ.</p>
+ <img src="86.jpg" width="50%">
+</div>
+
+<div id="me" class="w3-container kota w3-animate-opacity" style="display:none">
+ <h2>10122039 </h2>
+ <p>MOCHAMAD ZAKY AFRILLIANSYAH</p>
+ <img src="me.jpeg" width="35%">
+</div>
+
+<script>
+function openKota(namakota) {
+ var i;
+ var x = document.getElementsByClassName("kota");
+ for (i = 0; i < x.length; i++) {
+ x[i].style.display = "none"; 
+ }
+ document.getElementById(namakota).style.display = "block"; 
+}
+
+</script>
+</body>
+</html>
